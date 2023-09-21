@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Open+Sans&family=Poppins:ital,wght@0,400;1,500;1,800&display=swap');
+
+* {
+    word-break: break-word;
+    font-family: Poppins;
+}
+
+body {
+    color: white;
+    background-color: #0f0f0f;
+    overflow-x: hidden !important;
+    padding: 0px 30px 0px 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(115, 125, 353);
+    outline: 1px solid #6c3800;
+    border-radius: 1em;
+}
+
+.navbarzk {
+    width: 100vw;
+}
+
+.navbarothername h3 {
+    font-weight: bolder;
+}
+
+.navbarothername a span {
+    color: white;
+    font-size: medium;
+    transition: all .3s;
+}
+
+.navbarothername a span:hover {
+    color: rgb(115, 125, 353) !important;
+}
+
+.animationimg {
+    transform: translate(0);
+    animation: animationofimg 5s infinite;
+}
+
+#homearea {
+    width: 100vw !important;
+    min-height: 100vh !important;
+}
+
+.autotypespan, .headingwithbluecolor {
+    color: rgb(115, 125, 353);
+}
+
+.welcometxt {
+    font-size: 45px !important;
+}
+
+.autotypingtxt {
+    width: 45vw;
+    text-align: left;
+    font-size: 45px !important;
+}
+
+@keyframes animationofimg {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
