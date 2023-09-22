@@ -10,7 +10,6 @@ import nikeimg from './Nike-img.png';
 import bikeimg from './Bike-img.png';
 import blogginimg from './blooging-img.png';
 import cotactusimg from './contactus-img.png';
-import datecounterimg from './data-counter-img.png';
 import dreamimg from './Dream-img.png';
 import ecommerceimg from './e-commerce-img.png';
 import flicard from './flip-img.png';
@@ -31,7 +30,7 @@ const myskillsarray = [
     number: "90%"
   }, {
     name: 'Css',
-    number: "80%"
+    number: "85%"
   }, {
     name: 'Bootstrap',
     number: "95%"
@@ -119,6 +118,8 @@ function App() {
       <Aboutme />
       <Myprojects />
       <Myskills />
+      <Contactme />
+      <Footer />
     </div>
   );
 }
@@ -133,7 +134,7 @@ function Navbar() {
         <a className='text-decoration-none' href="#about-me"><span className='mx-2'>ABOUT ME</span></a>
         <a className='text-decoration-none' href="#myprojects"><span className='mx-2'>MY PROJECTS</span></a>
         <a className='text-decoration-none' href="#myskills"><span className='mx-2'>MY SKILLS</span></a>
-        <a className='text-decoration-none' href="#"><span className='mx-2'>CONTACT ME</span></a>
+        <a className='text-decoration-none' href="#cotactme"><span className='mx-2'>CONTACT ME</span></a>
       </h5>
     </nav>
   );
@@ -188,10 +189,10 @@ function Aboutme() {
 
 // My Projects
 function Myprojects() {
-  
+
 
   return (
-    <div data-aos-offset="250" data-aos-duration="1000" data-aos="fade-left" className='container pt-2 myprojectsdiv' id='myprojects'>
+    <div data-aos-offset="100" data-aos-duration="1000" data-aos="fade-left" className='container pt-2 myprojectsdiv' id='myprojects'>
       <h1 className='headingwithbluecolor'>My Projects</h1>
       <div className='d-flex justify-content-around flex-wrap mt-3'>
         {data.map((x, i) => <SingleCardofMyProject key={i} arraydata={x} />)}
@@ -216,12 +217,12 @@ function SingleCardofMyProject({ arraydata }) {
 
 // my skills
 function Myskills() {
-  
+
 
 
   return (
-    <div data-aos-offset="250" data-aos-duration="1000" data-aos="fade-right" className='container pt-5 myprojectsdiv mb-5' id='myskills'>
-      <h1 className='headingwithbluecolor mb-5'>My Skills</h1> 
+    <div data-aos-offset="250" data-aos-duration="2000" data-aos="fade-right" className='container pt-5 myprojectsdiv mb-5' id='myskills'>
+      <h1 className='headingwithbluecolor mb-5'>My Skills</h1>
       {myskillsarray.map((single, i) => <Singleskillline myskillsarray={single} key={i} />)}
     </div>
   )
@@ -229,12 +230,48 @@ function Myskills() {
 
 function Singleskillline({ myskillsarray }) {
   return (
-    <div style={{backgroundColor : 'rgba(255,255,255,5%)'}} className='d-flex container justify-content-between px-3 my-2 text-start align-items-center rounded'>
+    <div style={{ backgroundColor: 'rgba(255,255,255,5%)' }} className='d-flex container justify-content-between ps-3 my-2 text-start align-items-center rounded backgroundhover'>
       <span>{myskillsarray.name}</span>
-      <div className="progress fs-6" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{height: "30px", width : "500px"}}>
-        <div className="progress-bar" style={{width: myskillsarray.number}}>{myskillsarray.number}</div>
+      <div className="progress fs-6" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{ height: "30px", width: "500px" }}>
+        <div className="progress-bar" style={{ width: myskillsarray.number, backgroundColor: 'rgba(91 180 255, 90%)' }}>{myskillsarray.number}</div>
       </div>
-      
+
+    </div>
+  )
+}
+
+// contact me 
+function Contactme() {
+  return (
+    <div data-aos-offset="250" data-aos-duration="2000" data-aos="fade-left" className='container pt-5 myprojectsdiv mb-5' id='cotactme'>
+      <h1 className='headingwithbluecolor mb-5'>Contact Me</h1>
+      <div className='mt-2 cotactmediv'>
+        <h6 className='d-flex container py-2 px-3 my-2 text-start align-items-center rounded'>
+          <i class="fa-solid me-2 fa-envelope fontawesome"></i> <a className='text-decoration-none me-2 headingwithbluecolor' href="mailto:zainarfeen87@gmail.com">Click me</a> to open my gmail account
+        </h6>
+        <h6 className='d-flex container py-2 px-3 my-2 text-start align-items-center rounded'>
+          <i class="fa-solid me-2 fa-phone fontawesome"></i> 0300-9297318
+        </h6>
+        <h6 className='d-flex container py-2 px-3 my-2 text-start align-items-center rounded'>
+          <i class="fa-brands me-2 fa-github fontawesome"></i> <a className='text-decoration-none me-2 headingwithbluecolor' href="https://github.com/ZAINKHAN25">CLick Me</a> to open my github proifle
+        </h6>
+        <h6 className='d-flex container py-2 px-3 my-2 text-start align-items-center rounded'>
+          <i class="fa-brands me-2 fa-linkedin fontawesome"></i> <a className='text-decoration-none me-2 headingwithbluecolor' href="https://www.linkedin.com/in/zain-khan-21992026a/">Click Me</a> to open my linkedin proifle
+        </h6>
+        <h6 className='d-flex container py-2 px-3 my-2 text-start align-items-center rounded'>
+          <i class="fa-solid me-2 fa-house fontawesome"></i> Metroville, S.I.T.E, Karachi, Block 1, B-217.</h6>
+      </div>
+    </div>
+  )
+}
+
+function Footer(){
+  return (
+    <div className='d-flex container footerarea mt-5 align-items-center flex-column justify-content-evenly'>
+      <div className='fs-1 headingwithbluecolor'>Zain Khan</div>
+      <div className='headingwithbluecolor'>
+        @ 2023 ui-themes. All Rights Reversed.
+      </div>
     </div>
   )
 }

@@ -55,7 +55,8 @@ body::-webkit-scrollbar-thumb {
     min-height: 90vh !important;
 }
 
-.autotypespan, .headingwithbluecolor {
+.autotypespan,
+.headingwithbluecolor {
     color: rgb(91, 160, 255);
 }
 
@@ -69,41 +70,68 @@ body::-webkit-scrollbar-thumb {
     font-size: 45px !important;
 }
 
-.card{
-    background-color:rgb(91 160 255);
+.card {
+    background-color: rgb(91 160 255);
     color: #fff;
     transform: scale(100%);
     transition: all .8s;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(105%);
-    background-color:rgb(91 180 255);
+    background-color: rgb(91 180 255);
 }
 
-.btnofmyproject{
+.btnofmyproject {
     border: 1px solid #fff;
     color: #e3e3e3;
     float: right !important;
     transition: all .5s;
 }
 
-.btnofmyproject:hover{
+.btnofmyproject:hover {
     background-color: white;
     color: rgb(91 180 255);
 }
 
-.myprojectsdiv{
+.myprojectsdiv {
     margin-top: 10vh !important;
 }
+
+.fontawesome {
+    font-size: 22px !important;
+}
+
+.cotactmediv h6 {
+    background-color: rgba(255, 255, 255, 5%) !important;
+    transition: all .3s;
+}
+
+.cotactmediv h6:hover {
+    background-color: rgba(255, 255, 255, 10%) !important;
+}
+
+
+.backgroundhover:hover {
+    background-color: rgba(255, 255, 255, 10%) !important;
+}
+
+.footerarea {
+    height: 35vh;
+    background-color: rgba(255, 255, 255, 10%) !important;
+}
+
+/* this is commit */
 
 @keyframes animationofimg {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(20px);
     }
+
     100% {
         transform: translateY(0);
     }
