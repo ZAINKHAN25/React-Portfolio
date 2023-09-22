@@ -17,14 +17,14 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 1em;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 30%);
+    border-radius: 500px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(115, 125, 353);
-    outline: 1px solid #6c3800;
-    border-radius: 1em;
+    background-color: rgb(91, 160, 255);
+    outline: 1px solid rgb(91, 160, 255);
+    border-radius: 500px;
 }
 
 .navbarzk {
@@ -38,11 +38,11 @@ body::-webkit-scrollbar-thumb {
 .navbarothername a span {
     color: white;
     font-size: medium;
-    transition: all .3s;
+    transition: all .5s;
 }
 
 .navbarothername a span:hover {
-    color: rgb(115, 125, 353) !important;
+    color: rgb(91, 160, 255) !important;
 }
 
 .animationimg {
@@ -56,7 +56,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .autotypespan, .headingwithbluecolor {
-    color: rgb(115, 125, 353);
+    color: rgb(91, 160, 255);
 }
 
 .welcometxt {
@@ -69,12 +69,40 @@ body::-webkit-scrollbar-thumb {
     font-size: 45px !important;
 }
 
+.card{
+    background-color:rgb(0, 166, 255);
+    color: #fff;
+    transform: scale(100%);
+    transition: all .8s;
+}
+
+.card:hover{
+    transform: scale(105%);
+    background-color:rgb(0, 100, 255);
+}
+
+.btnofmyproject{
+    border: 1px solid #fff;
+    color: #e3e3e3;
+    float: right !important;
+    transition: all .5s;
+}
+
+.btnofmyproject:hover{
+    background-color: white;
+    color: rgb(0, 100, 255);
+}
+
+.myprojectsdiv{
+    margin-top: 30vh !important;
+}
+
 @keyframes animationofimg {
     0% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(20px);
     }
     100% {
         transform: translateY(0);

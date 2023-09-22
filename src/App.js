@@ -3,9 +3,22 @@ import Typewriter from 'typewriter-effect'; // Import the Typewriter component
 
 import './App.css';
 
+// img imports
+import weaterimg from './Weather-img.png';
+import quizzimg from './quizz-img.png';
+import nikeimg from './Nike-img.png';
+import bikeimg from './Bike-img.png';
+import blogginimg from './blooging-img.png';
+import cotactusimg from './contactus-img.png';
+import datecounterimg from './data-counter-img.png';
+import dreamimg from './Dream-img.png';
+import ecommerceimg from './e-commerce-img.png';
+import flicard from './flip-img.png';
+import todoimg from './todo-img.png';
+
 // Define your typewriter options here
 const typewriterOptions = {
-  strings: ["Muhammad Zain-ul-arfeen", "Full-Stack-Developer", "Mern-Stack-Developer", "React-Developer", "Frontend Developer", "Backend Developer", "Graphic Designer", "Student", "Zain Khan 25"],
+  strings: ["Muhammad Zain-ul-arfeen", "Full-Stack-Developer", "Mern-Stack-Developer", "React-Developer", "Frontend Developer", "Backend Developer", "Graphic Designer", "Student","Zain Khan 25"],
   autoStart: true,
   loop: true,
   // Other options here...
@@ -30,7 +43,7 @@ function Navbar() {
       <h5 className='navbarothername my-auto'>
         <a className='text-decoration-none' href="#home"><span className='mx-2'>HOME</span></a>
         <a className='text-decoration-none' href="#about-me"><span className='mx-2'>ABOUT ME</span></a>
-        <a className='text-decoration-none' href="#"><span className='mx-2'>MY PROJECTS</span></a>
+        <a className='text-decoration-none' href="#myprojects"><span className='mx-2'>MY PROJECTS</span></a>
         <a className='text-decoration-none' href="#"><span className='mx-2'>MY SKILLS</span></a>
         <a className='text-decoration-none' href="#"><span className='mx-2'>CONTACT ME</span></a>
       </h5>
@@ -41,12 +54,12 @@ function Navbar() {
 // Home
 function Home() {
   return (
-    <div data-aos="fade-in"  className='d-flex'>
+    <div data-aos="fade-in" className='d-flex'>
       <div className='d-flex px-1 justify-content-center align-items-start flex-column' id='homearea'>
-        <div className='fs-1 welcometxt ms-1'>
+        <div className='fs-1 welcometxt ms-2'>
           Hello Everyone I am
         </div>
-        <div className='d-flex ms-1 autotypingtxt'>
+        <div className='d-flex ms-2 autotypingtxt'>
 
           <span className='text-wrap autotypespan'>
             <Typewriter
@@ -55,7 +68,7 @@ function Home() {
         </div>
       </div>
       <div>
-      <img className='animationimg' style={{ width: "50vw" }} src={'https://avatars.githubusercontent.com/u/121414309?v=4'} alt="" />
+        <img className='animationimg mt-1' style={{ width: "50vw" }} src={'https://avatars.githubusercontent.com/u/121414309?v=4'} alt="" />
 
       </div>
     </div>
@@ -66,7 +79,7 @@ function Home() {
 // About me
 function Aboutme() {
   return (
-    <div data-aos-offset="250" data-aos-duration="1500" data-aos="fade-right" className='container mt-5' id='about-me'>
+    <div data-aos-offset="250" data-aos-duration="1500" data-aos="fade-right" className='container pt-5' id='about-me'>
       <h1 className='headingwithbluecolor'>About Me</h1>
 
       <p className='mt-4'>
@@ -87,18 +100,82 @@ function Aboutme() {
 
 // My Projects
 function Myprojects() {
-  // const data = [
-  //   {
-  //     name: 'firebase',
-  //     link: 'jdfsjds.wev.app',
-  //     imgsrc: 'kfdskdskds'
-  //   }
-  // ]
+  const data = [
+    {
+      name: 'Weather Application',
+      link: 'https://weather-app-react-beta.vercel.app/',
+      imgsrc: weaterimg,
+      tools: 'React Js'
+    },{
+      name: 'Quiz App',
+      link: 'https://vercel.com/zainkhan25/quiz-app',
+      imgsrc: quizzimg,
+      tools: 'React Js'
+    },{
+      name: 'Nike Website',
+      link: 'https://vercel.com/zainkhan25/nike-website',
+      imgsrc: nikeimg,
+      tools: 'React Js'
+    },{
+      name: 'Bike Show Room App',
+      link: 'https://vercel.com/zainkhan25/bike-show-room-app',
+      imgsrc: bikeimg,
+      tools: 'React Js'
+    },{
+      name: 'Blogging Website',
+      link: 'https://mini-hackathon-0.web.app/',
+      imgsrc: blogginimg,
+      tools: 'Html, Css, Bootstrap, Javascript and Firebase'
+    },{
+      name: 'Contact Us Page',
+      link: 'https://vercel.com/zainkhan25/contact-us-page-using-react',
+      imgsrc: cotactusimg,
+      tools: 'React Js'
+    },{
+      name: 'Soical Media App',
+      link: 'https://zainkhan25.github.io/Firebase-Dream-App',
+      imgsrc: dreamimg,
+      tools: 'Html, Css, Bootstrap, Javascript and Firebase'
+    },{
+      name: 'Ecommerce Ui',
+      link: 'https://zainkhan25.github.io/ecommerce-website/',
+      imgsrc: ecommerceimg,
+      tools: 'Html, Css and Bootrap'
+    },{
+      name: 'Flip Card',
+      link: 'https://vercel.com/zainkhan25/flip-cards',
+      imgsrc: flicard,
+      tools: 'React Js'
+    },{
+      name: 'To Do App',
+      link: 'https://vercel.com/zainkhan25/todo-app-with-react-zainkhan25',
+      imgsrc: todoimg,
+      tools: 'React Js'
+    },
+  ]
 
   return (
-    <div>
-      Hello it will be my project area soon
+    <div  data-aos-offset="250" data-aos-duration="1000" data-aos="fade-left"  className='container pt-5 myprojectsdiv' id='myprojects'>
+      <h1 className='headingwithbluecolor'>My Projects</h1>
+      <div className='d-flex justify-content-around flex-wrap mt-4'>
+      {data.map((x, i) => <SingleCardofMyProject key={i} arraydata={x}/>)}
+      </div>
     </div>
+  )
+}
+
+
+// signle card of my project
+function SingleCardofMyProject({arraydata}){
+  return (
+    <div className="card my-2" style={{width: '18rem'}}>
+        <img src={arraydata.imgsrc} class="card-img-top" alt="..."/>
+          <div class="card-body">
+            <h5 class="card-title">{arraydata.name}</h5>
+            <p class="card-text">This project is made with "{arraydata.tools}"</p>
+            <a target='blank' href={arraydata.link} class="btn btnofmyproject">Want to See Project</a>
+          </div>
+      </div>
   )
 }
 
