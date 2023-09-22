@@ -18,11 +18,98 @@ import todoimg from './todo-img.png';
 
 // Define your typewriter options here
 const typewriterOptions = {
-  strings: ["Muhammad Zain-ul-arfeen", "Full-Stack-Developer", "Mern-Stack-Developer", "React-Developer", "Frontend Developer", "Backend Developer", "Graphic Designer", "Student","Zain Khan 25"],
+  strings: ["Muhammad Zain-ul-arfeen", "Full-Stack-Developer", "Mern-Stack-Developer", "React-Developer", "Frontend Developer", "Backend Developer", "Graphic Designer", "Student", "Zain Khan 25"],
   autoStart: true,
   loop: true,
   // Other options here...
 };
+
+
+const myskillsarray = [
+  {
+    name: 'Html',
+    number: "90%"
+  }, {
+    name: 'Css',
+    number: "80%"
+  }, {
+    name: 'Bootstrap',
+    number: "95%"
+  }, {
+    name: 'Java Script',
+    number: "70%"
+  }, {
+    name: 'Firebase',
+    number: "90%"
+  }, {
+    name: 'Node Js',
+    number: "70%"
+  }, {
+    name: 'Express Js',
+    number: "90%"
+  }, {
+    name: 'Mongo DB',
+    number: "90%"
+  }, {
+    name: 'React Js',
+    number: "70%"
+  }
+]
+
+const data = [
+  {
+    name: 'Weather Application',
+    link: 'https://weather-app-react-beta.vercel.app/',
+    imgsrc: weaterimg,
+    tools: 'React Js'
+  }, {
+    name: 'Quiz App',
+    link: 'https://vercel.com/zainkhan25/quiz-app',
+    imgsrc: quizzimg,
+    tools: 'React Js'
+  }, {
+    name: 'Nike Website',
+    link: 'https://vercel.com/zainkhan25/nike-website',
+    imgsrc: nikeimg,
+    tools: 'React Js'
+  }, {
+    name: 'Bike Show Room App',
+    link: 'https://vercel.com/zainkhan25/bike-show-room-app',
+    imgsrc: bikeimg,
+    tools: 'React Js'
+  }, {
+    name: 'Blogging Website',
+    link: 'https://mini-hackathon-0.web.app/',
+    imgsrc: blogginimg,
+    tools: 'Html, Css, Bootstrap, Javascript and Firebase'
+  }, {
+    name: 'Contact Us Page',
+    link: 'https://vercel.com/zainkhan25/contact-us-page-using-react',
+    imgsrc: cotactusimg,
+    tools: 'React Js'
+  }, {
+    name: 'Soical Media App',
+    link: 'https://zainkhan25.github.io/Firebase-Dream-App',
+    imgsrc: dreamimg,
+    tools: 'Html, Css, Bootstrap, Javascript and Firebase'
+  }, {
+    name: 'Ecommerce Ui',
+    link: 'https://zainkhan25.github.io/ecommerce-website/',
+    imgsrc: ecommerceimg,
+    tools: 'Html, Css and Bootrap'
+  }, {
+    name: 'Flip Card',
+    link: 'https://vercel.com/zainkhan25/flip-cards',
+    imgsrc: flicard,
+    tools: 'React Js'
+  }, {
+    name: 'To Do App',
+    link: 'https://vercel.com/zainkhan25/todo-app-with-react-zainkhan25',
+    imgsrc: todoimg,
+    tools: 'React Js'
+  },
+]
+
 
 function App() {
   return (
@@ -31,6 +118,7 @@ function App() {
       <Home />
       <Aboutme />
       <Myprojects />
+      <Myskills />
     </div>
   );
 }
@@ -44,7 +132,7 @@ function Navbar() {
         <a className='text-decoration-none' href="#home"><span className='mx-2'>HOME</span></a>
         <a className='text-decoration-none' href="#about-me"><span className='mx-2'>ABOUT ME</span></a>
         <a className='text-decoration-none' href="#myprojects"><span className='mx-2'>MY PROJECTS</span></a>
-        <a className='text-decoration-none' href="#"><span className='mx-2'>MY SKILLS</span></a>
+        <a className='text-decoration-none' href="#myskills"><span className='mx-2'>MY SKILLS</span></a>
         <a className='text-decoration-none' href="#"><span className='mx-2'>CONTACT ME</span></a>
       </h5>
     </nav>
@@ -100,82 +188,54 @@ function Aboutme() {
 
 // My Projects
 function Myprojects() {
-  const data = [
-    {
-      name: 'Weather Application',
-      link: 'https://weather-app-react-beta.vercel.app/',
-      imgsrc: weaterimg,
-      tools: 'React Js'
-    },{
-      name: 'Quiz App',
-      link: 'https://vercel.com/zainkhan25/quiz-app',
-      imgsrc: quizzimg,
-      tools: 'React Js'
-    },{
-      name: 'Nike Website',
-      link: 'https://vercel.com/zainkhan25/nike-website',
-      imgsrc: nikeimg,
-      tools: 'React Js'
-    },{
-      name: 'Bike Show Room App',
-      link: 'https://vercel.com/zainkhan25/bike-show-room-app',
-      imgsrc: bikeimg,
-      tools: 'React Js'
-    },{
-      name: 'Blogging Website',
-      link: 'https://mini-hackathon-0.web.app/',
-      imgsrc: blogginimg,
-      tools: 'Html, Css, Bootstrap, Javascript and Firebase'
-    },{
-      name: 'Contact Us Page',
-      link: 'https://vercel.com/zainkhan25/contact-us-page-using-react',
-      imgsrc: cotactusimg,
-      tools: 'React Js'
-    },{
-      name: 'Soical Media App',
-      link: 'https://zainkhan25.github.io/Firebase-Dream-App',
-      imgsrc: dreamimg,
-      tools: 'Html, Css, Bootstrap, Javascript and Firebase'
-    },{
-      name: 'Ecommerce Ui',
-      link: 'https://zainkhan25.github.io/ecommerce-website/',
-      imgsrc: ecommerceimg,
-      tools: 'Html, Css and Bootrap'
-    },{
-      name: 'Flip Card',
-      link: 'https://vercel.com/zainkhan25/flip-cards',
-      imgsrc: flicard,
-      tools: 'React Js'
-    },{
-      name: 'To Do App',
-      link: 'https://vercel.com/zainkhan25/todo-app-with-react-zainkhan25',
-      imgsrc: todoimg,
-      tools: 'React Js'
-    },
-  ]
+  
 
   return (
-    <div  data-aos-offset="250" data-aos-duration="1000" data-aos="fade-left"  className='container pt-5 myprojectsdiv' id='myprojects'>
+    <div data-aos-offset="250" data-aos-duration="1000" data-aos="fade-left" className='container pt-2 myprojectsdiv' id='myprojects'>
       <h1 className='headingwithbluecolor'>My Projects</h1>
-      <div className='d-flex justify-content-around flex-wrap mt-4'>
-      {data.map((x, i) => <SingleCardofMyProject key={i} arraydata={x}/>)}
+      <div className='d-flex justify-content-around flex-wrap mt-3'>
+        {data.map((x, i) => <SingleCardofMyProject key={i} arraydata={x} />)}
+      </div>
+    </div>
+  )
+}
+// signle card of my project
+function SingleCardofMyProject({ arraydata }) {
+  return (
+    <div className="card my-2" style={{ width: '18rem' }}>
+      <img src={arraydata.imgsrc} className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title">{arraydata.name}</h5>
+        <p className="card-text">This project is made with "{arraydata.tools}"</p>
+        <a target='blank' href={arraydata.link} className="btn btnofmyproject">Want to See Project</a>
       </div>
     </div>
   )
 }
 
 
-// signle card of my project
-function SingleCardofMyProject({arraydata}){
+// my skills
+function Myskills() {
+  
+
+
   return (
-    <div className="card my-2" style={{width: '18rem'}}>
-        <img src={arraydata.imgsrc} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title">{arraydata.name}</h5>
-            <p class="card-text">This project is made with "{arraydata.tools}"</p>
-            <a target='blank' href={arraydata.link} class="btn btnofmyproject">Want to See Project</a>
-          </div>
+    <div data-aos-offset="250" data-aos-duration="1000" data-aos="fade-right" className='container pt-5 myprojectsdiv mb-5' id='myskills'>
+      <h1 className='headingwithbluecolor mb-5'>My Skills</h1> 
+      {myskillsarray.map((single, i) => <Singleskillline myskillsarray={single} key={i} />)}
+    </div>
+  )
+}
+
+function Singleskillline({ myskillsarray }) {
+  return (
+    <div style={{backgroundColor : 'rgba(255,255,255,5%)'}} className='d-flex container justify-content-between px-3 my-2 text-start align-items-center rounded'>
+      <span>{myskillsarray.name}</span>
+      <div className="progress fs-6" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{height: "30px", width : "500px"}}>
+        <div className="progress-bar" style={{width: myskillsarray.number}}>{myskillsarray.number}</div>
       </div>
+      
+    </div>
   )
 }
 
