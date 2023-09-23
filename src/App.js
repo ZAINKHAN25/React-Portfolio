@@ -68,12 +68,12 @@ const data = [
     tools: 'React Js'
   }, {
     name: 'Nike Website',
-    link: 'nike-website-five.vercel.app',
+    link: 'https://nike-website-five.vercel.app/',
     imgsrc: nikeimg,
     tools: 'React Js'
   }, {
     name: 'Bike Show Room App',
-    link: 'https://vercel.com/zainkhan25/bike-show-room-app',
+    link: 'https://bike-show-room-app.vercel.app/',
     imgsrc: bikeimg,
     tools: 'React Js'
   }, {
