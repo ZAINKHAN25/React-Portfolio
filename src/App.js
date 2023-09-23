@@ -123,20 +123,30 @@ function App() {
     </div>
   );
 }
+// <nav className='d-flex flex-wrap navbarzk align-items-center justify-content-around shadow ' id='home'>
+//   <h3 className='my-auto'>Zain Khan</h3>
+//   <h5 className='navbarothername my-auto text-center'>
+//     <a className='text-decoration-none' href="#home"><span className='mx-2'>HOME</span></a>
+//     <a className='text-decoration-none' href="#about-me"><span className='mx-2'>ABOUT ME</span></a>
+//     <a className='text-decoration-none' href="#myprojects"><span className='mx-2'>MY PROJECTS</span></a>
+//     <a className='text-decoration-none' href="#myskills"><span className='mx-2'>MY SKILLS</span></a>
+//     <a className='text-decoration-none' href="#cotactme"><span className='mx-2'>CONTACT ME</span></a>
+//   </h5>
+// </nav>
 
 // navbar
 function Navbar() {
   return (
     <nav className='d-flex flex-wrap navbarzk align-items-center justify-content-around shadow ' id='home'>
-      <h3 className='my-auto'>Zain Khan</h3>
-      <h5 className='navbarothername my-auto text-center'>
-        <a className='text-decoration-none' href="#home"><span className='mx-2'>HOME</span></a>
-        <a className='text-decoration-none' href="#about-me"><span className='mx-2'>ABOUT ME</span></a>
-        <a className='text-decoration-none' href="#myprojects"><span className='mx-2'>MY PROJECTS</span></a>
-        <a className='text-decoration-none' href="#myskills"><span className='mx-2'>MY SKILLS</span></a>
-        <a className='text-decoration-none' href="#cotactme"><span className='mx-2'>CONTACT ME</span></a>
-      </h5>
-    </nav>
+   <h3 className='my-3'>Zain Khan</h3>
+   <h5 className='navbarothername d-flex flex-reverse-row text-center'>
+     <a className='text-decoration-none my-3' href="#home"><span className='mx-2 btn btnofnav'>HOME</span></a>
+     <a className='text-decoration-none my-3' href="#about-me"><span className='mx-2 btn btnofnav'>ABOUT ME</span></a>
+     <a className='text-decoration-none my-3' href="#myprojects"><span className='mx-2 btn btnofnav'>MY PROJECTS</span></a>
+     <a className='text-decoration-none my-3' href="#myskills"><span className='mx-2 btn btnofnav'>MY SKILLS</span></a>
+     <a className='text-decoration-none my-3' href="#cotactme"><span className='mx-2 btn btnofnav'>CONTACT ME</span></a>
+   </h5>
+ </nav>
   );
 }
 
@@ -156,7 +166,7 @@ function Home() {
             /></span>
         </div>
       </div>
-      <div style={{minWidth: "45%",maxWidth:'100%'}}>
+      <div style={{ minWidth: "40%", maxWidth: '100%' }}>
         <img className='animationimg mt-1' src={'https://avatars.githubusercontent.com/u/121414309?v=4'} alt="" />
 
       </div>
@@ -265,7 +275,7 @@ function Contactme() {
   )
 }
 
-function Footer(){
+function Footer() {
   return (
     <div className='d-flex container footerarea mt-5 align-items-center flex-column justify-content-evenly'>
       <div className='fs-1 headingwithbluecolor'>Zain Khan</div>

@@ -49,7 +49,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbarothername a span:hover {
-    color: rgb(91, 160, 255) !important;
+    color: black !important;
+}
+
+.btnofnav{
+    border: 1px solid #fff;
+    color: #e3e3e3;
+    float: right !important;
+    transition: all .5s;
+}
+
+.btnofnav:hover{
+    background-color: white;
+    color: black !important;
 }
 
 .animationimg {
