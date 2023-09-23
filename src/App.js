@@ -127,9 +127,9 @@ function App() {
 // navbar
 function Navbar() {
   return (
-    <nav className='d-flex flex-wrap navbarzk align-items-center justify-content-around p-3 shadow ' id='home'>
+    <nav className='d-flex flex-wrap navbarzk align-items-center justify-content-around shadow ' id='home'>
       <h3 className='my-auto'>Zain Khan</h3>
-      <h5 className='navbarothername my-auto'>
+      <h5 className='navbarothername my-auto text-center'>
         <a className='text-decoration-none' href="#home"><span className='mx-2'>HOME</span></a>
         <a className='text-decoration-none' href="#about-me"><span className='mx-2'>ABOUT ME</span></a>
         <a className='text-decoration-none' href="#myprojects"><span className='mx-2'>MY PROJECTS</span></a>
@@ -143,9 +143,9 @@ function Navbar() {
 // Home
 function Home() {
   return (
-    <div data-aos="fade-in" className='d-flex'>
-      <div className='d-flex px-1 justify-content-center align-items-start flex-column' id='homearea'>
-        <div className='fs-1 welcometxt ms-2'>
+    <div data-aos="fade-in" className='d-flex flex-wrap justify-content-around align-items-center px-2' id='homearea'>
+      <div className='d-flex px-1 justify-content-center align-items-start flex-column'>
+        <div className='fs-1 mx-auto welcometxt ms-2'>
           Hello Everyone I am
         </div>
         <div className='d-flex ms-2 autotypingtxt'>
@@ -156,8 +156,8 @@ function Home() {
             /></span>
         </div>
       </div>
-      <div>
-        <img className='animationimg mt-1' style={{ width: "50vw" }} src={'https://avatars.githubusercontent.com/u/121414309?v=4'} alt="" />
+      <div style={{minWidth: "45%",maxWidth:'100%'}}>
+        <img className='animationimg mt-1' src={'https://avatars.githubusercontent.com/u/121414309?v=4'} alt="" />
 
       </div>
     </div>
@@ -230,7 +230,7 @@ function Myskills() {
 
 function Singleskillline({ myskillsarray }) {
   return (
-    <div style={{ backgroundColor: 'rgba(255,255,255,5%)' }} className='d-flex container justify-content-between ps-3 my-2 text-start align-items-center rounded backgroundhover'>
+    <div style={{ backgroundColor: 'rgba(255,255,255,5%)' }} className='d-flex container justify-content-between flex-wrap ps-3 my-2 text-start align-items-center rounded backgroundhover'>
       <span>{myskillsarray.name}</span>
       <div className="progress fs-6" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{ height: "30px", width: "500px" }}>
         <div className="progress-bar" style={{ width: myskillsarray.number, backgroundColor: 'rgba(91 180 255, 90%)' }}>{myskillsarray.number}</div>
@@ -243,23 +243,23 @@ function Singleskillline({ myskillsarray }) {
 // contact me 
 function Contactme() {
   return (
-    <div data-aos-offset="250" data-aos-duration="2000" data-aos="fade-left" className='container pt-5 myprojectsdiv mb-5' id='cotactme'>
+    <div data-aos-offset="250" data-aos-duration="2000" data-aos="fade-left" className='container pt-5 myprojectsdiv w-100 mb-5 ' id='cotactme'>
       <h1 className='headingwithbluecolor mb-5'>Contact Me</h1>
       <div className='mt-2 cotactmediv'>
         <h6 className='d-flex container py-2 px-3 my-2 text-start align-items-center rounded'>
-          <i class="fa-solid me-2 fa-envelope fontawesome"></i> <a className='text-decoration-none me-2 headingwithbluecolor' href="mailto:zainarfeen87@gmail.com">Click me</a> to open my gmail account
+          <i className="fa-solid me-2 fa-envelope fontawesome"></i> <a className='text-decoration-none me-2 headingwithbluecolor' href="mailto:zainarfeen87@gmail.com">Click me</a> to open my gmail account
         </h6>
         <h6 className='d-flex container py-2 px-3 my-2 text-start align-items-center rounded'>
-          <i class="fa-solid me-2 fa-phone fontawesome"></i> 0300-9297318
+          <i className="fa-solid me-2 fa-phone fontawesome"></i> 0300-9297318
         </h6>
         <h6 className='d-flex container py-2 px-3 my-2 text-start align-items-center rounded'>
-          <i class="fa-brands me-2 fa-github fontawesome"></i> <a className='text-decoration-none me-2 headingwithbluecolor' href="https://github.com/ZAINKHAN25">CLick Me</a> to open my github proifle
+          <i className="fa-brands me-2 fa-github fontawesome"></i> <a className='text-decoration-none me-2 headingwithbluecolor' href="https://github.com/ZAINKHAN25">CLick Me</a> to open my github proifle
         </h6>
         <h6 className='d-flex container py-2 px-3 my-2 text-start align-items-center rounded'>
-          <i class="fa-brands me-2 fa-linkedin fontawesome"></i> <a className='text-decoration-none me-2 headingwithbluecolor' href="https://www.linkedin.com/in/zain-khan-21992026a/">Click Me</a> to open my linkedin proifle
+          <i className="fa-brands me-2 fa-linkedin fontawesome"></i> <a className='text-decoration-none me-2 headingwithbluecolor' href="https://www.linkedin.com/in/zain-khan-21992026a/">Click Me</a> to open my linkedin proifle
         </h6>
         <h6 className='d-flex container py-2 px-3 my-2 text-start align-items-center rounded'>
-          <i class="fa-solid me-2 fa-house fontawesome"></i> Metroville, S.I.T.E, Karachi, Block 1, B-217.</h6>
+          <i className="fa-solid me-2 fa-house fontawesome"></i> Metroville, S.I.T.E, Karachi, Block 1, B-217.</h6>
       </div>
     </div>
   )
