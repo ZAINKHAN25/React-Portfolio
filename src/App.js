@@ -63,12 +63,12 @@ const data = [
     tools: 'React Js'
   }, {
     name: 'Quiz App',
-    link: 'https://vercel.com/zainkhan25/quiz-app',
+    link: 'https://quiz-app-self-one.vercel.app/',
     imgsrc: quizzimg,
     tools: 'React Js'
   }, {
     name: 'Nike Website',
-    link: 'https://vercel.com/zainkhan25/nike-website',
+    link: 'nike-website-five.vercel.app',
     imgsrc: nikeimg,
     tools: 'React Js'
   }, {
@@ -83,7 +83,7 @@ const data = [
     tools: 'Html, Css, Bootstrap, Javascript and Firebase'
   }, {
     name: 'Contact Us Page',
-    link: 'https://vercel.com/zainkhan25/contact-us-page-using-react',
+    link: 'https://contact-us-page-using-react.vercel.app/',
     imgsrc: cotactusimg,
     tools: 'React Js'
   }, {
@@ -93,17 +93,17 @@ const data = [
     tools: 'Html, Css, Bootstrap, Javascript and Firebase'
   }, {
     name: 'Ecommerce Ui',
-    link: 'https://zainkhan25.github.io/ecommerce-website/',
+    link: 'https://contact-us-page-using-react.vercel.app/',
     imgsrc: ecommerceimg,
     tools: 'Html, Css and Bootrap'
   }, {
     name: 'Flip Card',
-    link: 'https://vercel.com/zainkhan25/flip-cards',
+    link: 'https://flip-cards-pink.vercel.app/',
     imgsrc: flicard,
     tools: 'React Js'
   }, {
     name: 'To Do App',
-    link: 'https://vercel.com/zainkhan25/todo-app-with-react-zainkhan25',
+    link: 'https://todo-app-with-react-zainkhan25.vercel.app/',
     imgsrc: todoimg,
     tools: 'React Js'
   },
