@@ -93,7 +93,7 @@ const data = [
     tools: 'Html, Css, Bootstrap, Javascript and Firebase'
   }, {
     name: 'Ecommerce Ui',
-    link: 'https://contact-us-page-using-react.vercel.app/',
+    link: 'https://zainkhan25.github.io/ecommerce-website/',
     imgsrc: ecommerceimg,
     tools: 'Html, Css and Bootrap'
   }, {
